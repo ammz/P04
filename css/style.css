@@ -189,45 +189,195 @@ ul li {
 }
 
 body {
-	background: #ccc;
+	background: #cbcdd3;
 }
 
 header {
+	position: relative;
 	padding-top: 20px;
-	background: #c4eea2;
-	height: 120px;
+	background: #cbcdd3;
+	overflow: hidden;
 }
 
+#logo-container {
+	overflow: hidden;
+	background: cadetblue;
+}
 
-nav ul li {
-	float: left;
+#direccion {
+	background: red;
+	letter-spacing: 0.3px;
+	text-align: right;
+	text-shadow: 0 1px 0 #ccc;
+	font: bold 12px/40px Verdana, "Lucida Grande", Lucida, sans-serif;
+	padding-top: 10px;
+}
+
+span#telefono {
+	font: bold 18px Verdana, "Lucida Grande", Lucida, sans-serif;
+	padding-left: 15px;
+}
+
+menu ul {
+	margin-left: 0px;
+	padding-top: 12px;
+	text-align: right;
+	overflow: hidden;
+	background: yellow;
 }
 
 menu ul li {
+	display: inline;
+	height: 40px;
+	line-height: 40px;
+	list-style-type: none;
+}
+
+
+nav ul{
+ 	text-align: right;
+}
+
+nav ul li {
 	float: left;
+	height: 26px;
+	padding: 0 10px;
+	
+	border-top: 1px solid #b9bdc2;
+	border-bottom: 1px solid #e0e1e3;
+	border-left: 1px solid #b0bdc2;
+	border-right: 1px solid #cbcdd2;
+	
+	background: #E9E9EA; /* old browsers */
+	background: -moz-linear-gradient(top, #E9E9EA 0%, #B8BCC1 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E9E9EA), color-stop(100%,#B8BCC1)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E9E9EA', endColorstr='#B8BCC1',GradientType=0 ); /* ie */
+	background: -o-linear-gradient(top, #E9E9EA 0%,#B8BCC1 100%); /* opera */
+}
+
+nav ul li:first-child,
+nav ul li:last-child {
+	background: #8996A3; /* old browsers */
+	background: -moz-linear-gradient(top, #8996A3 0%, #4A5C6F 50%, #253C53 51%, #183047 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8996A3), color-stop(50%,#4A5C6F), color-stop(51%,#253C53), color-stop(100%,#183047)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8996A3', endColorstr='#183047',GradientType=0 ); /* ie */
+	background: -o-linear-gradient(top, #8996A3 0%,#4A5C6F 50%,#253C53 51%,#183047 100%); /* opera */
+}
+
+nav ul li:first-child{
+
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	
+	border-left: #183047;
+}
+
+nav ul li:last-child {
+	padding: 0 30px;
+	
+
+	-moz-border-radius-topright: 20px;
+	-moz-border-radius-bottomright: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	
+	border-right: #183047;
+}
+
+nav ul li a {
+	color: black;
+	text-decoration: none;
+	line-height: 26px;
+}
+
+nav ul li:first-child a,
+nav ul li:last-child a {
+	color: white;
+	font-weight: bold;
 }
 
 
 #feature {
+	position: relative;
 	height: 300px;
 	overflow: hidden;
-	background: white url(../img/bg_feature.jpg) no-repeat 240px 26px;
+	background: #cbcdd3 url(../img/bg_feature.jpg) no-repeat 240px 26px;
 }
 
 #feature p {
 	position: absolute;
+	right: 20px;
+	font-family: sans-serif;
+	font-style: italic;
 }
 
 #buscador {
 	background: yellow;
-	width: 300px;
+	width: 274px;
 	height: 274px;
 	margin-top: 26px;
 	
 	-moz-border-radius: 25px;
 	-webkit-border-radius: 25px;
 	border-radius: 25px;
+	
+	background: #ECEDEF; /* old browsers */
+	background: -moz-linear-gradient(top, #ECEDEF 0%, #D3D4D9 22%, #C7C7CC 82%, #ADACB2 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ECEDEF), color-stop(22%,#D3D4D9), color-stop(82%,#C7C7CC), color-stop(100%,#ADACB2)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ECEDEF', endColorstr='#ADACB2',GradientType=0 ); /* ie */
+	background: -o-linear-gradient(top, #ECEDEF 0%,#D3D4D9 22%,#C7C7CC 82%,#ADACB2 100%); /* opera */
 }
+
+#buscador h2 {
+	padding: 10px 0 10px 40px;
+}
+
+form div {
+	width: 200px;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+}
+
+#buscador label {
+	clear: both;
+	float: left;
+	height: 30px;
+	width: 105px;
+	font: bold 14px/30px Verdana, "Lucida Grande", Lucida, sans-serif;
+	margin-left: 12px;
+}
+
+#buscador select {
+	width: 180px;
+	margin-left: 12px;
+	margin-bottom: 6px;
+}
+
+#buscador input {
+	margin-top: 15px;
+	margin-bottom: 0px;
+	margin-right: 0;
+	margin-left: 12px;
+}
+
+#buscador button {
+	
+	cursor: pointer;
+	position: relative;
+	float: right;
+	bottom: -20px;
+	right: -20px;
+	
+	*bottom: 8px;
+	*right: -10px;
+	_bottom: 8px;
+	_padding: 0px 6px 0px 15px;
+	margin-top: 15px;
+}
+
 
 #main {
 	overflow: hidden;
@@ -244,7 +394,9 @@ menu ul li {
 	width: 150px;
 }
 
-
+#footer {
+	position: relative;
+}
 
 
 
