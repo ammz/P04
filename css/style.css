@@ -184,11 +184,65 @@ button {
 	cursor: pointer;
 }
 
+ul li {
+	list-style-type: none;
+}
+
+body {
+	background: #ccc;
+}
+
+header {
+	padding-top: 20px;
+	background: #c4eea2;
+	height: 120px;
+}
 
 
+nav ul li {
+	float: left;
+}
+
+menu ul li {
+	float: left;
+}
 
 
+#feature {
+	height: 300px;
+	overflow: hidden;
+	background: white url(../img/bg_feature.jpg) no-repeat 240px 26px;
+}
 
+#feature p {
+	position: absolute;
+}
+
+#buscador {
+	background: yellow;
+	width: 300px;
+	height: 274px;
+	margin-top: 26px;
+	
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+}
+
+#main {
+	overflow: hidden;
+	background: #555;
+}
+
+#stocks ul li {
+	float: left;
+}
+
+#banner1, #banner2 {
+	background: red;
+	height: 400px;
+	width: 150px;
+}
 
 
 
