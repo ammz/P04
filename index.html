@@ -22,7 +22,7 @@
   
   <header class="container_24">
     
-    <div id="logo-container" class="grid_6 alpha">
+    <div id="logo-container" class="grid_6">
       <img src="img/logo.jpg" alt="logo" />
     </div>
 
@@ -101,67 +101,88 @@
   <div id="contenido" class="container_24">
 
     <aside class="grid_4">
-      <div id="banner1">
+      <div id="banner1" class="redondeado">
 	<img src="img/banner1.jpg" alt="banner1" />
       </div>
     </aside>
 
-    <div id="main" class="grid_16">
-
-	
-
-      <section id="stocks">
-	<h1>Coche destacado</h1>
-	<ul>
-	  <li>
-	    <a href="#">
-	      <img src="img/stock1.jpg" alt="stock01" />
-	    </a>
-	  </li>
-	  <li>
-	    <a href="#">
-	      <img src="img/stock2.jpg" alt="stock02" />
-	    </a>
-	  </li>
-	  <li>
-	    <a href="#">
-	      <img src="img/stock3.jpg" alt="stock03" />
-	    </a>
-	  </li>
-	  <li>
-	    <a href="#">
-	      <img src="img/stock4.jpg" alt="stock04" />
-	    </a>
-	  </li>
-	</ul>
+    <div id="main" class="grid_16 redondeado">
+		
+		<section id="destacado" class="grid_9 redondeado">
+			<h1>Coche destacado</h1>
+			<img src="img/destacado.jpg" alt="vehiculo destacado" />
+			<p>
+				Hyundai i30+, 1.8 <br />
+				Diesel
+			</p>
+			<p id="precio" class="redondeado">14.000 €</p>
+		</section>
+		
+      	<section id="stocks">
+		<h1>Coches de oferta</h1>
+		<table border="0" cellspacing="5" cellpadding="5">
+			<tr>
+				<td>
+					<a href="#">
+			  			<img src="img/stock1.jpg" alt="stock01" />
+			  			<p>Nissan LEAF</p>
+			  			<p class="precio">22.000 €</p>
+					</a>
+				</td>
+				<td>
+					<a href="#">
+						<img src="img/stock2.jpg" alt="stock02" />
+						<p>Nissan Micra</p>
+						<p class="precio">10.000 €</p>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="#">
+			  			<img src="img/stock3.jpg" alt="stock03" />
+			  			<p>Audi A1</p>
+			  			<p class="precio">23.000 €</p>
+					</a>
+				</td>
+				<td>
+					<a href="#">
+						<img src="img/stock4.jpg" alt="stock04" />
+						<p>Volskwagen Golf</p>
+						<p class="precio">14.500 €</p>
+					</a>
+				</td>
+			</tr>
+		</table>
+		    
       </section>
 
-      <section id="noticias">
-	<article class="uno">
+      <section id="noticias" class="grid_16 alpha omega">
+	<article class="uno redondeado">
+	  <img src="img/foto-noticia1.jpg" alt="foto noticia1" />
 	  <h1>Volkswagen Golf, tres decadas de diseño innovador</h1>
 	  <p>Desde que el primer modelo saliera a la luz en 1981, muchos han 
 sido los compradores de este vehículo que no han resistido la 
 tentación de continuar adquiriendo un golf decada tras década...
 	  </p>
-	  <img src="img/foto-noticia1.jpg" alt="foto noticia1" />
-	  <button>Leer +</button>
+	  <button class="redondeado">Leer +</button>
 	</article>
-	<article class="dos">
+	<article class="dos redondeado">
+	  <img src="img/foto-noticia1.jpg" alt="foto noticia1" />
 	  <h1>Sebastian Vettel vuelve a arrasar dejando sin opciones a
 los chicos de Ferrari</h1>
 	  <p>Desde que el primer modelo saliera a la luz en 1981, muchos han 
 sido los compradores de este vehículo que no han resistido la 
 tentación de continuar adquiriendo un golf decada tras década...
 	  </p>
-	  <img src="img/foto-noticia1.jpg" alt="foto noticia1" />
-	  <button>Leer +</button>
+	  <button class="redondeado">Leer +</button>
 	</article>
       </section>
       
     </div> <!-- Fin main -->
 
     <aside class="grid_4">
-      <div id="banner2">
+      <div id="banner2" class="redondeado">
 	<img src="img/banner2.jpg" alt="banner2" />
       </div>
     </aside>
@@ -172,7 +193,7 @@ tentación de continuar adquiriendo un golf decada tras década...
 
   <footer class="container_24">
     <nav>
-      <ul class="grid_14">
+      <ul class="grid_15">
 	<li>
 	  <a href="#">Inicio</a>
 	</li>
@@ -193,8 +214,10 @@ tentación de continuar adquiriendo un golf decada tras década...
 	</li>
       </ul>
     </nav>
+    
+    <p class="grid_6">Página web realizada por <a href="#">Autointegra</a></p>
 
-    <menu class="grid-3">
+    <menu class="grid_3">
       <ul>
 	<li>
 	  <a href="#">
@@ -214,7 +237,6 @@ tentación de continuar adquiriendo un golf decada tras década...
       </ul>
     </menu>
 
-    <p>Página web realizada por <a href="#">Autointegra</a></p>
   </footer>
 
   <!--[if lt IE 7 ]>

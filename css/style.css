@@ -175,9 +175,9 @@ a:hover { color: #036; }
 }
 
 .redondeado {
-	-moz-border-radius: 25px;
-	-webkit-border-radius: 25px;
-    border-radius: 25px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+    border-radius: 10px;
 }
 
 button {
@@ -199,13 +199,7 @@ header {
 	overflow: hidden;
 }
 
-#logo-container {
-	overflow: hidden;
-	background: cadetblue;
-}
-
 #direccion {
-	background: red;
 	letter-spacing: 0.3px;
 	text-align: right;
 	text-shadow: 0 1px 0 #ccc;
@@ -223,7 +217,6 @@ menu ul {
 	padding-top: 12px;
 	text-align: right;
 	overflow: hidden;
-	background: yellow;
 }
 
 menu ul li {
@@ -234,8 +227,8 @@ menu ul li {
 }
 
 
-nav ul{
- 	text-align: right;
+nav ul {
+	float: right;
 }
 
 nav ul li {
@@ -287,7 +280,7 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-	color: black;
+	color: #444;
 	text-decoration: none;
 	line-height: 26px;
 }
@@ -302,7 +295,6 @@ nav ul li:last-child a {
 #feature {
 	position: relative;
 	height: 300px;
-	overflow: hidden;
 	background: #cbcdd3 url(../img/bg_feature.jpg) no-repeat 240px 26px;
 }
 
@@ -314,10 +306,10 @@ nav ul li:last-child a {
 }
 
 #buscador {
-	background: yellow;
 	width: 274px;
 	height: 274px;
 	margin-top: 26px;
+	margin-left: -12px;
 	
 	-moz-border-radius: 25px;
 	-webkit-border-radius: 25px;
@@ -378,30 +370,206 @@ form div {
 	margin-top: 15px;
 }
 
+#contenido {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: #cbcdd3;
+	overflow: hidden;
+}
 
 #main {
 	overflow: hidden;
-	background: #555;
+	background: #dddee2;
+	padding-top: 5px;
+	margin-bottom: 10px;
 }
 
-#stocks ul li {
+#destacado {
+	background: white;
+	display: block;
+	padding: 5px;
+	border: 2px solid #bbb;
+}
+
+#destacado img {
+	padding-bottom: 15px;
+}
+
+#destacado p {
+	position: relative;
 	float: left;
+	margin: auto 20px;
+}
+
+p#precio {
+	position: relative;
+	float: right;
+	background: #3e4722;
+	color: white;
+	padding: 2px 3px;
+	width: 70px;
+	text-align: center;
+}
+
+#destacado img {
+	display: block;
+	margin: 0 auto;
+}
+
+#stocks h1 {
+	text-align: center;
+}
+
+#stocks td {
+	padding: 1px;
+}
+
+#stocks a {
+	text-decoration: none;
+	color: #3e4722;
+}
+
+#stocks p.precio {
+	border-top: 1px solid;
+	text-align: right;
+	padding-bottom: 20px;
+}
+
+#noticias {
+	padding-bottom: 15px;
+}
+
+#noticias article {
+	position: relative;
+	width: 550px;
+	min-height: 100px;
+	padding: 10px;
+	margin: 15px auto;
+	display: block;
+	background: white;
+	border: 2px solid #ccc;
+	z-index: 2;
+}	
+
+#noticias article h1 {
+	color: #7a8c40;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #444;
+}	
+
+#noticias article p {
+	color: #3e4722;
+	font-size: 12px;
+}
+
+#noticias article img {
+	margin: 0 5px;
+}
+
+#noticias article.uno img {
+	float: left;
+	margin-right: 10px;
+}
+
+#noticias article.uno h1,
+#noticias article.uno p {
+	margin-left: 170px;
+}
+
+#noticias article.dos img {
+	float: right;
+	margin-left: 10px;
+}
+
+#noticias article.dos h1,
+#noticias article.dos p{
+	margin-right: 170px;
+}
+
+#noticias article button {
+	position: absolute;
+	border: none;
+	background: #3e4722;
+	color: white;
+	padding: 4px 8px;
+	text-transform: uppercase;
+}
+
+#noticias article.uno button {
+	bottom: -10px;
+	right: -10px;
+}
+
+#noticias article.dos button {
+	z-index: 5;
+	bottom: -10px;
+	left: -10px;
 }
 
 #banner1, #banner2 {
-	background: red;
+	background: #acb170;
 	height: 400px;
 	width: 150px;
 }
 
-#footer {
-	position: relative;
+#banner1 img,
+#banner2 img {
+	display: block;
+	margin: 0 auto;
+	width: 140px;
+	height: 210px;
 }
 
+footer {
+	background: #cbcdd3 url(../img/bg_footer.png) no-repeat;
+	overflow: hidden;
+	position: relative;
+	padding-top: 10px;
+}
 
+footer nav ul li {
+	border: none;
+	border-left: 2px solid #777;
+	background: transparent;
+	padding: 0 10px;
+	height: 16px;
+	
+}
 
+footer nav ul li a {
+	line-height: 0px;
+}
 
+footer nav ul li:first-child,
+footer nav ul li:last-child {
+	border: none;
+	border-radius: 0px;
+	background: transparent;
+	padding: 0 10px;
+}	
 
+footer nav ul li:first-child a,
+footer nav ul li:last-child a {
+	color: #444;
+	font-weight: normal;
+}
+
+footer nav ul li:last-child {
+	border-left: 2px solid #777;
+}
+
+footer p {
+	line-height: 16px;
+}
+
+footer menu ul {
+	padding-top: 0px;
+}
+
+footer menu ul li {
+	line-height: 26px;
+	
+}
 
 
 
