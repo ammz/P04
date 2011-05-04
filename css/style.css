@@ -577,13 +577,15 @@ footer menu ul li {
 
 
 
-#contenido a {
+/* GALERIA */
+
+#p_galeria #contenido a {
     text-decoration: none;
     color: green;
     font-weight: normal;
 }
 
-table.tableResults {
+#p_galeria table.tableResults {
     width: 620px;
     margin-left: 5px;
     margin-right: 5px;
@@ -592,31 +594,31 @@ table.tableResults {
     margin-bottom: 20px;
 }
 
-thead th {
+#p_galeria thead th {
     text-align: center;
     padding-bottom: 20px;
 }
 
-thead th.pref {
+#p_galeria thead th.pref {
 	text-align: left;	
 }
 
-tbody tr:hover {
+#p_galeria tbody tr:hover {
 	background: #ccc;
 }
 
-tbody tr {
+#p_galeria tbody tr {
 	border-bottom: 1px solid #b7b7b7;
 	height: 64px;
 }
 
-td {
+#p_galeria td {
 	padding-top: 7px;
 	padding-bottom: 7px;
 	text-align: center;
 }
 
-td.pref {
+#p_galeria td.pref {
 	text-align: left;
 	font-weight: bold;
 	color: #474747;
@@ -624,7 +626,7 @@ td.pref {
 }
 
 
-table.stocksItems td a p {
+#p_galeria table.stocksItems td a p {
 	display: block;
 	width: 120px;
 }
