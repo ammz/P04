@@ -576,6 +576,21 @@ footer menu ul li {
 }
 
 
+/* FICHA */
+
+#p_ficha #mainFoto {
+    border: 2px solid #555555;
+    padding: 10px;
+}
+
+#thumbails {
+    margin: 0px;
+}
+
+#thumbails li {
+    float: left;
+    margin: 5px;
+}
 
 /* GALERIA */
 
