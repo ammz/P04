@@ -385,6 +385,7 @@ form div {
 	overflow: hidden;
 	background: #dddee2;
 	padding-top: 5px;
+	padding-bottom: 15px;
 	margin-bottom: 10px;
 }
 
@@ -439,9 +440,9 @@ p#precio {
 	padding-bottom: 20px;
 }
 
-#noticias {
-	padding-bottom: 15px;
-}
+/* #noticias { */
+/* 	padding-bottom: 15px; */
+/* } */
 
 #noticias article {
 	position: relative;
@@ -590,6 +591,50 @@ footer menu ul li {
 #thumbails li {
     float: left;
     margin: 5px;
+    height: 80px;
+}
+
+#thumbails li.flecha {
+    width: 250px;
+    height: 21px;
+    margin: 0px 5px;
+    text-align: center;
+}
+
+#p_ficha h2 {
+    margin: 10px;
+    padding-bottom: 3px;
+    color: #7A8C40;
+    border-bottom: 2px solid #7A8C40;
+}
+
+#p_ficha h2 span {
+    float: right;
+}
+
+#p_ficha table {
+    width: 300px;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #afafa6;
+    font: 12px/18px Verdana, "Lucida Grande", Lucida, sans-serif;
+}
+
+#p_ficha td:first-child {
+    width: 120px;
+}
+
+#observaciones {
+	height: 150px;
+	width: 240px;
+	border: 1px solid #a7a8a8;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+#p_ficha button {
+    margin: 5px;
 }
 
 /* GALERIA */
@@ -640,7 +685,6 @@ footer menu ul li {
 	width: 140px;
 }
 
-
 #p_galeria table.stocksItems td a p {
 	display: block;
 	width: 120px;
@@ -649,7 +693,7 @@ footer menu ul li {
 .paginacion {
     float: right;
     padding-right: 5px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 
